@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.container{
+    height: 100vh;
+    background: linear-gradient(90deg, hsla(296, 100%, 6%, 1) 0%, hsla(5, 90%, 24%, 1) 100%);
+}
+.quiz-app{
+    width: 800px;
+    min-height: 500px;
+    background-color: snow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+}
+.Title-scoreBoard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Title-scoreBoard h1{
+    margin-left: 25px;
+}
+.Title-scoreBoard h2{
+    margin-right: 35px;
+}
+.container-question{
+    margin-top: 60px;
+    width: 100%;
+    
+    
+}
+.question{
+    width: 80%;
+    margin: auto;
+    font-size: 21px;
+}
+#container-answers{
+    margin-top: 40px;
+    width: 100%;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.answer{
+    width: 80%;
+    border-radius: 3px;
+    border: 1px solid blue;
+    padding: 15px;
+    margin: 6px auto;
+}
+
+.answer:hover{
+    background-color: brown;
+    color: white;
+    border: 1px solid white;
+}
+.correct-answer{
+    border: 3px solid greenyellow;
+    background-color: yellowgreen;
+    color: darkgreen;
+    width: 80%;
+    border-radius: 3px;
+    border: 1px solid blue;
+    padding: 15px;
+    margin: 6px auto;
+}
+
+.wrong-answer{
+    border: 3px solid red;
+    background-color: red;
+    color: darkred;
+    width: 80%;
+    border-radius: 3px;
+    border: 1px solid blue;
+    padding: 15px;
+    margin: 6px auto;
+} 
+#container-button{
+    width: 80%;
+    margin: 15px auto;
+    
+}
+#buttons{
+    width: 20%;
+    padding: 12px;
+    margin: 5px;
+    font-size: 15px;
+    background-color: brown;
+    color: white;
+}
+#imageResult{
+    width: 120px;
+    height: 100px;
+}
+#styleResult{
+    
+    width: 70% ;
+    margin: 30px auto;
+    text-align: center;
+}
+@media(max-width: 700px){
+    
+    .quiz-app{
+        width: 310px;
+        
+       
+    }
+    .Title-scoreBoard h1{
+        font-size: 19px;
+    }
+    .Title-scoreBoard h2{
+        font-size: 15px;
+    }
+    .question{
+        font-size: 13px;
+    }
+    .answer{
+        font-size: 12px;
+        padding: 9px;
+    }#buttons{
+        width: 50%;
+        padding: 5px;
+        font-size: 12px;
+    }
+   
+}
